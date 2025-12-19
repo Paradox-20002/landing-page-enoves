@@ -3,7 +3,7 @@ import { Mail, Linkedin, Phone, MapPin  } from "lucide-react"
 import Link from "next/link";
 export default function Footer(){
     return(
-            <footer className="fixed bottom-0 w-full bg-navbar text-navbar-foreground border border-border p-4">
+            <footer className="w-full bg-navbar text-navbar-foreground border border-border p-4">
                 <div className="flex justify-between px-12 mt-5 mb-12">
                     <div>
                         <Image src="/Enoves.svg" alt="Enoves logo" width={100} height={90} priority />

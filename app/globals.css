@@ -7,6 +7,7 @@
   --color-contact-us-hover: var(--contact-us-hover);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-hero-span: var(--hero-span);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -88,7 +89,10 @@
 
   /* contact us button */
   --contact-us: var(--ring);
-  --contact-us-hover: oklch(0.8091 0.1251 65.76);
+  --contact-us-hover: oklch(0.828 0.189 84.429);
+
+  /*hero section span color*/
+  --hero-span: oklch(0.828 0.189 84.429);
 
 }
 
@@ -131,6 +135,9 @@
     /* dark contact us button */
   --contact-us: var(--chart-3);
   --contact-us-hover: oklch(0.3912 0.0387 233.06);
+
+  /*hero section span color*/
+  --hero-span: oklch(46.068% 0.14877 266.634);
 }
 
 @layer base {

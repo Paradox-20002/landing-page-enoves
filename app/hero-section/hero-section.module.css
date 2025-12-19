@@ -1,0 +1,30 @@
+.meet_btn {
+  position: relative;
+  display: inline-block; /* ensures padding is included in hover */
+  overflow: hidden;
+  cursor: pointer;       /* set on the button itself */
+  z-index: 0;            /* keep pseudo-element behind text */
+  padding: 1rem 2rem;    /* ensure proper clickable area */
+  color:var(--color-foreground);
+}
+
+
+.meet_btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;             /* full height of button */
+  background-color: var(--color-accent); /* or white */
+  transform: translateY(100%); /* start fully below */
+  transition: transform 0.3s ease; /* smooth animation */
+  z-index: -1;             /* behind the text */
+}
+
+.meet_btn:hover::after {
+  transform: translateY(0); /* slide up to cover button */
+  cursor: pointer;
+
+}
+

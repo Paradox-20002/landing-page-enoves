@@ -5,7 +5,7 @@ import Toggle from "../components/toggle";
 
 export default function Header() {
   return (
-    <header className="fixed w-full my-4 rounded-xl bg-navbar text-navbar-foreground border border-border">
+    <header className="sticky w-full my-4 rounded-xl bg-navbar text-navbar-foreground border border-border">
       <div className="flex items-center justify-between px-6 py-4">
         
         {/* Logo */}

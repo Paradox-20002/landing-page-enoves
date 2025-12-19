@@ -1,12 +1,14 @@
-import Footer from "./footer/footer";
-import Header from "./header/header";
-import Image from "next/image";
 
+import HeroSection from "./hero-section/hero-section";
+import Header from "./header/header";
+import Footer from "./footer/footer";
 export default function Home() {
   return (
     
     <main>
-      {/* <Footer/> */}
+      <Header/> 
+      <HeroSection/>
+      <Footer/>
     </main>
   );
 }
