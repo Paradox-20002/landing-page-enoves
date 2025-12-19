@@ -1,0 +1,31 @@
+.nav a {
+  position: relative;
+  color: var(--foreground);
+  text-transform: capitalize;
+}
+
+.nav a::after{
+    content:'';
+    position: absolute;
+    width:0;
+    height: 2px;
+    transition: 0.3s ease;
+    bottom: -2px;
+    left: 0;
+}
+.nav a:hover::after{
+    width: 100%;
+    background-color: var(--foreground);
+}
+
+/* CTA button */
+.cta {
+  background-color: var(--chart-4);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta:hover {
+  background-color: var(--contact-us-hover);
+  transform: translateY(-1px);
+}
