@@ -2,6 +2,7 @@
 import Image from "next/image";
 import  useTypingEffect  from "../hooks/useTypingEffect";
 import styles from "./hero-section.module.css";
+import { motion } from "framer-motion";
 export default function HeroSection(){
     const typedText = useTypingEffect("DECISIONS");
     return(
@@ -11,7 +12,12 @@ export default function HeroSection(){
                 <div className="w-[50vw]">
                     <h1 className="text-7xl font-bold">Transforming Data into <span className={`my-4 px-2 py-2 inline-block bg-hero-span rounded-2xl text-foreground`}>{typedText}</span></h1>
                     <p>leverage the power of machine learning and AI to unlock insights and drive business growth</p>
-                    <button className={`bg-hero-span p-3 rounded-lg my-3 ${styles.meet_btn}`}>Book a meeting</button>
+                    <motion.button
+                     initial={{ scale: 0 }} 
+                     animate={{ scale: 1 }}
+                     whileHover={{ scale: 1.1 }}
+                     whileTap={{ scale: 0.95 }} 
+                     className={`bg-hero-span p-3 rounded-lg my-3 ${styles.meet_btn}`}>Book a meeting</motion.button>
                     <div className="flex space-x-4 mt-4">
                         <div className="flex -space-x-2">
                             <Image 
