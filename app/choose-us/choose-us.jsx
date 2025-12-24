@@ -56,6 +56,9 @@ export default function ChooseUs() {
           const Icon = item.icon;
           return (
             <motion.div
+              drag
+              // dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+              // dragElastic={0.2}
               key={item.title}
               variants={itemVariants} // children just listen to parent
               className="w-80 h-80 -ml-10 flex flex-col items-center justify-center text-center bg-contact-us-hover border-background border-9 rounded-full p-9"
